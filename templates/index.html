@@ -1,0 +1,86 @@
+{% extends 'base.html'%}
+{% block nav %}
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#contact">Contact <span class="sr-only">(current)</span></a>
+    </li>
+    {% endblock nav %}
+{% block body %}
+    <div class="container" >
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/static/1.png" alt="First slide" height=500>
+            <div class="carousel-caption d-none d-md-block" style="color: black;">
+              <h5><a href="/progress">Know yourself?</a></h5>
+              <p>know your ratings on different coding platforms</p>
+            </div>
+          </div>
+         
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/static/2.png" alt="Second slide" height=500>
+            <div class="carousel-caption d-none d-md-block" style="color: black;">
+              <h5><a href="/mine">Track your progress</a></h5>
+              <p>let us know your rating changes</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/static/4.png" alt="Third slide"height=500>
+            <div class="carousel-caption d-none d-md-block" style="color: black;">
+              <h5><a href="/competitions">Want to improve?</a></h5>
+              <p>Let us find some competitions </p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="background-color:rgb(218, 221, 224); width: 50px;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="background-color:rgb(218, 221, 224); width: 50px;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6" style="margin: 4rem auto 0 auto;">
+        <p class="display-4" id="about" name="about" style="text-align: center;">
+            About 
+        </p>
+
+        <hr>
+        <p class="lead" style="text-align: center;">
+            This app is designed to keep a record your progress in coding.
+          </p>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6" style="margin: 2rem auto 0 auto;">
+      <p class="display-4" id="contact" name="contact" style="text-align: center;">
+         Contact us
+      </p>
+
+      <hr>
+      <p class="lead" style="text-align: center;">
+          Email : example@gmail.com <br>
+          Phone no: +91-XXXXXXXXXX
+        </p>
+    </div>
+</div>
+<div class="card">
+  
+  <div class="card-body">
+    
+    <a href="#" class="btn btn-primary" style="text-align: left;">Go top</a>
+  </div>
+</div>
+
+
+{% endblock body %}
